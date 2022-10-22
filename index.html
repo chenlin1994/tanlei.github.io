@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>教育部学籍在线验证报告</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <link href="./css/iconfont.css" rel="stylesheet" type="text/css" />
+    <link
+      href="./css/new_query.min.css?20210802"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="./js/2.1.1/jquery.min.js"></script>
+    <script src="./js/layer.js"></script>
+    <script src="./js/flexible_css.js"></script>
+    <script src="./js/flexible.js"></script>
+    <script src="./js/check_wap_en.min.js"></script>
+    <script>
+      function gaTrackerOutboundLink(
+        ele,
+        eventCategory,
+        eventAction,
+        eventLabel
+      ) {
+        gtag('event', eventAction, {
+          event_category: eventCategory,
+          event_label: eventLabel
+        })
+        return true
+      }
+    </script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-100524-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag('js', new Date())
+      gtag('config', 'UA-100524-1')
+    </script>
+  </head>
+  <body>
+    <div class="res">
+      <div class="bg-white">
+        <div class="top-change clearfix">
+          <script src="./js/jquery.min.js"></script>
+          <script src="./js/materialize.min.js"></script>
+          <div class="fl lang-div">
+            <script>
+              $(document).ready(function() {
+                sel_lang()
+              })
+              function sel_lang() {
+                var srcid = 'archive'
+                var srcidParam = srcid.length == 0 ? '' : '&srcid=' + srcid
+                $('#change_lang').on('click', function() {
+                  console.log(123)
+                  if ($('#change_lang').is(':checked')) {
+                    //英文
+                    window.location.href =
+                      '/xlcx/bg.do?vcode=' +
+                      'AK6YVRGV0Q2YHJT6' +
+                      '&ln=' +
+                      'en' +
+                      srcidParam
+                  } else {
+                    //中文
+                    window.location.href =
+                      '/xlcx/bg.do?vcode=' +
+                      'AK6YVRGV0Q2YHJT6' +
+                      '&ln=' +
+                      'cn' +
+                      srcidParam
+                  }
+                })
+              }
+            </script>
+
+            <div class="switch noenEn">
+              <input type="checkbox" disabled id="change_lang" />
+              <label for="change_lang" class="button-label">
+                <span class="circle"></span>
+                <span class="text">中文</span>
+                <span class="text modal-trigger" href="#noenreport">英文</span>
+              </label>
+            </div>
+            <div id="noenreport" class="modal" style="display:none;width:90%">
+              <div class="modal-content" style="padding-bottom:0">
+                该报告尚无对应的英文版，您可登录
+                <a
+                  href="https://my.chsi.com.cn/archive/index.jsp"
+                  target="_blank"
+                  class="nr-detail"
+                  >学信档案</a
+                >
+                进行申请。
+              </div>
+              <div class="modal-footer">
+                <span class=" modal-action modal-close btn-flat">关闭</span>
+              </div>
+            </div>
+            <script type="text/javascript">
+              $(function() {
+                $('.modal-trigger').leanModal({
+                  dismissible: true, // 点击模态框外部则关闭模态框
+                  opacity: 0, // 背景透明度
+                  in_duration: 300, // 切入时间
+                  out_duration: 200 // 切出时间
+                })
+              })
+            </script>
+          </div>
+
+          <!--<div class='pw-info-pc'><a href="/xlcx/bg.do?vcode=AK6YVRGV0Q2YHJT6&amp;ln=cn&amp;lang=cn&goto=pc">电脑版</a></div> -->
+          <div class="fr pdf-div">
+            <!-- <img src='https://t2.chei.com.cn/chsi/images/wap/search_pdf.png'  alt="下载PDF" title="下载PDF" onClick="window.location.href='/report/xueji/download.do?vcode=AK6YVRGV0Q2YHJT6&amp;rid=78851644113763153300063363921935&amp;ln=cn'" class='responsive-img waves-effect waves-teal right z-depth-1 down_psf' /> -->
+            <img
+              src="https://t2.chei.com.cn/chsi/images/wap/search_pdf.png"
+              alt="下载PDF"
+              title="下载PDF"
+              onClick="window.location.href='/report/xueji/download.do?vcode=AK6YVRGV0Q2YHJT6&amp;rid=78851644113763153300063363921935&amp;ln=cn'"
+            />
+          </div>
+        </div>
+        <h3>教育部学籍在线验证报告</h3>
+        <div class="img-div clearfix">
+          <img
+            id="photoPositon"
+            src="./css/img.jpg"
+            width="58"
+            data-caption="个人头像"
+          />
+
+          <!-- 头像不存在 -->
+
+          <div class="img-right">
+            <h6 class="marginT0">谭磊<span>男</span></h6>
+            <p>证件号码：43060219900630351X</p>
+            <p>汉族　1990年06月30日</p>
+          </div>
+        </div>
+      </div>
+      <div class="collection card">
+        <div class="row collection-item">
+          <div class="col s4 bolder">院校</div>
+          <div class="col s8">中南大学</div>
+        </div>
+        <div class="row collection-item">
+          <div class="col s4 bolder">层次</div>
+          <div class="col s8">本科</div>
+        </div>
+        <div class="row collection-item">
+          <div class="col s4 bolder">院系</div>
+          <div class="col s8">软件学院</div>
+        </div>
+        <div class="row collection-item">
+          <div class="col s4 bolder">班级</div>
+          <div class="col s8">1002</div>
+        </div>
+        <div class="row collection-item">
+          <div class="col s4 bolder">专业</div>
+          <div class="col s8">软件工程</div>
+        </div>
+        <div class="row collection-item">
+          <div class="col s4 bolder">学号</div>
+          <div class="col s8">201002406058</div>
+        </div>
+        <div class="row collection-item">
+          <div class="col s4 bolder">形式</div>
+          <div class="col s8">普通全日制</div>
+        </div>
+        <div class="row collection-item">
+          <div class="col s4 bolder">入学时间</div>
+          <div class="col s8">2010年09月01日</div>
+        </div>
+        <div class="row collection-item">
+          <div class="col s4 bolder">学制</div>
+          <div class="col s8">4 年</div>
+        </div>
+        <div class="row collection-item">
+          <div class="col s4 bolder">类型</div>
+          <div class="col s8">普通高等教育</div>
+        </div>
+        <div class="row collection-item">
+          <div class="col s4 bolder">学籍状态</div>
+          <div class="col s8">毕业(毕业日期2014年06月30日)</div>
+        </div>
+      </div>
+
+      <div class="collection card">
+        <div class="row collection-item">
+          <div class="col s4 bolder">在线验证码</div>
+          <div class="col s8"><strong>0329 3911 4140</strong></div>
+        </div>
+        <div class="row collection-item">
+          <div class="col s4 bolder">更新日期</div>
+          <div class="col s8">2022年10月21日</div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/util.js"></script>
+    <script src="./js/send_email_cn_1.0.1.js"></script>
+    <script>
+      function doPrint() {}
+
+      $('.bindGA').click(function() {
+        gtag('event', 'download_barcode', {
+          event_category: 'onlinereport_xj',
+          event_label: 'cn',
+          value: '1'
+        })
+      })
+
+      $('#bindGA_print').click(function() {
+        // doPrint()
+        gtag('event', 'print', {
+          event_category: 'onlinereport_xj',
+          event_label: 'cn',
+          value: '1'
+        })
+      })
+      $('#bindGA_download').click(function() {
+        gtag('event', 'download_pdf', {
+          event_category: 'onlinereport_xj',
+          event_label: 'cn',
+          value: '1'
+        })
+      })
+      $('#emailButton').click(function() {
+        sendEmail(
+          '/report/xueji/email.do?vcode=AK6YVRGV0Q2YHJT6&amp;rid=78851644113763153300063363921935&amp;ln=cn'
+        )
+        gtag('event', 'email', {
+          event_category: 'onlinereport_xj',
+          event_label: 'cn',
+          value: '1'
+        })
+      })
+    </script>
+  </body>
+</html>
